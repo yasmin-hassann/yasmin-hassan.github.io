@@ -11,49 +11,43 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    
 }
 
 header {
-  
-
     background-color: #30D5C8;
     color: white;
-   padding: 20px 0;
-  
+    padding: 20px 0;
     text-align: center;
     width: 100%;
     margin-top: 0;
-    
-
 }
-    
-    
-    
-
 
 h1, h2, h3 {
     font-family: 'Montserrat', sans-serif;
     color: #228B22;
-   
 }
 
 .navbar {
     background-color: rgba(224, 255, 255, 0.8);
     padding: 15px 0;
     border-bottom: 2px solid #30D5C8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .navbar li {
-    display: inline-block;
-    margin: 0 20px;
+    margin: 0 15px;
 }
 
 .navbar a {
@@ -77,7 +71,6 @@ h1, h2, h3 {
     color: white;
     padding: 60px 0;
     text-align: center;
-    
 }
 
 .hero img {
@@ -88,14 +81,8 @@ h1, h2, h3 {
 }
 
 .about, .Education {
-    padding: 40px ;
-
- 
-    
-   
-    
+    padding: 40px;
 }
-
 
 .courses {
     columns: 2;
@@ -134,12 +121,10 @@ footer {
     align-items: flex-start;
     padding: 40px 20px;
     max-width: 1200px;
-    
-    
 }
 
 #About img {
-    max-width: 500px;
+    max-width: 100%;
     height: auto;
     margin-right: 40px;
     border-radius: 10px;
@@ -164,6 +149,19 @@ footer {
     margin-bottom: 15px;
 }
 
+
+@media (max-width: 1200px) {
+    .navbar li {
+        margin: 0 10px; /* Adjusted margin for large screens */
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar li {
+        margin: 0 8px; /* Adjusted margin for medium screens */
+    }
+}
+
 @media (max-width: 768px) {
     #About {
         flex-direction: column;
@@ -174,4 +172,116 @@ footer {
     #About img {
         margin: 0 0 20px 0;
     }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar li {
+        margin: 10px 0;
+    }
 }
+
+@media (max-width: 576px) {
+    .navbar {
+        padding: 10px 0;
+    }
+
+    .navbar li {
+        margin: 8px 0;
+    }
+
+    .navbar a {
+        font-size: 14px; /* Smaller font size for smaller screens */
+    }
+}
+
+@media (max-width: 400px) {
+    .navbar a {
+        font-size: 12px; /* Even smaller font size for very small screens */
+        padding-bottom: 3px;
+    }
+
+    .navbar li {
+        margin: 5px 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
